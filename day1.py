@@ -2,6 +2,8 @@
 
 myfile = open('input.txt', 'r')
 contents = myfile.read()
+myfile.close()
+
 contents = contents.strip()
 contents = contents.split(", ")
 
@@ -22,8 +24,6 @@ for i in contents:
         direction -= 1
         if direction == 0:
             direction = 4
-    else:
-        print("Error")
 
     if direction == 1:
         for m in range(int(i[1:])):
@@ -57,10 +57,6 @@ for i in contents:
             elif not found:
                 found = True
                 answer2 = "Part 2: " + str(up + right)
-    else:
-        print("Error")
-
-myfile.close()
 
 print("Part 1:", up + right)
 print(answer2)
