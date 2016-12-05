@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 
-# Perl solution for part 1 of day 2 made after overwriting part 1 in python
+# perl solution for part 1 of day 2 made after overwriting part 1 in python
 use strict;
 use warnings;
 
