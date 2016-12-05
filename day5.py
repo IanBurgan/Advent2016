@@ -2,13 +2,6 @@
 
 from hashlib import md5
 
-myfile = open('input.txt', 'r')
-contents = myfile.read()
-myfile.close()
-
-contents = contents.strip()
-contents = contents.split()
-
 password = [',', ',', ',', ',', ',', ',', ',', ',']
 contents = 'wtnhxymk'
 total = 0
