@@ -13,7 +13,7 @@ my $ans = '';
 
 my $hash = md5_hex($input, $count);
 
-while (length ($ans) < 8) {
+while (length($ans) < 8) {
   if (substr($hash, 0, 5) eq '00000') {
     $ans .= substr($hash, 5, 1)
   }
