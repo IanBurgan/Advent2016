@@ -22,4 +22,4 @@ while (length($ans) < 8) {
   $hash = md5_hex($input, $count);
 }
 
-print $ans;
+print "$ans\n";
