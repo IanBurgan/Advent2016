@@ -11,7 +11,9 @@ dare I say it, bad practices. I apologize in advance.
 ## Leaderboard Position:
 
 Only the first 100 completions are displayed on the public leaderboard.
-For any ranks greater than 100, you're just going to have to trust me.
+For any ranks greater than 100, you're just going to have to trust me. Rank 1
+is my ranking on the first star. Similarly, Rank 2 is my ranking on the second
+star.
 
 |Day    |Rank 1 |Rank 2 |
 |------:|------:|------:|
