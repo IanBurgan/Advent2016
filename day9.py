@@ -26,3 +26,22 @@ while i < len(contents):
         i += 1
 
 print(total)
+
+# part 2
+# inspired by /u/blockingthesky
+def parse(contents):
+    total = 0
+
+    while '(' in contents:
+        total += contents.find('(')
+        contents = contents[contents.find('('):]
+        chars = int(contents[1:contents.find(')')].split('x')[0])
+        amount = int(contents[1:contents.find(')')].split('x')[1])
+        contents = contents[contents.find(')')+1:]
+        total += parse(contents[:chars]) * amount
+        contents = contents[chars:]
+
+    total += len(contents)
+    return total
+
+print(parse(contents))
