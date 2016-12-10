@@ -4,7 +4,7 @@
 use strict;
 use warnings;
 
-use Digest::MD5 qw/md5_hex/;
+use Digest::MD5 'md5_hex';
 
 my $input = 'wtnhxymk';
 my $count = 0;
