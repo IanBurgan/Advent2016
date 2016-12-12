@@ -1,9 +1,9 @@
 """
 
-Given my specific inputs, this can be solved by hand. I was only able to figure
+Given my specific inputs, this can be easily solved by hand. I was only able to figure
 this out by looking at the solutions of others online.
 
-Although this may not work for all inputs, I used to following process:
+Although this will not work for all inputs, I used to following process:
 
 My input starts with 4 items on the first floor, 2 items on the second, and 4
 items on the third floor.
@@ -15,6 +15,6 @@ moving all 10 items onto the fourth floow requires 17 moves (2 * 10 - 3 = 17).
 
 My answer: 5 + 9 + 17 = 31
 
-The same process worked for part 2. 
+The same process worked for part 2.
 
 """
