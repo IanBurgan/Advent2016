@@ -17,7 +17,7 @@ while loc not in visited:
     # if steps > 50:
     #     print(len(visited))
     #     break
-    # visited.add((x,y))
+    visited.add((x,y))
 
     if x - 1 >= 0 and not wall(x-1, y) and (x-1, y) not in visited:
         q.put((x-1, y, steps + 1))
