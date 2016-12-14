@@ -4,7 +4,7 @@ import queue
 
 def wall(x, y):
     val = x*x + 3*x + 2*x*y + y + y*y + 1362
-    return bin(val).count('1') % 2 == 1
+    return bin(val).count('1') % 2 == 1 or x < 0 or y < 0
 
 loc = (31, 39)
 visited = set()
@@ -19,11 +19,11 @@ while loc not in visited:
     #     break
     visited.add((x,y))
 
-    if x - 1 >= 0 and not wall(x-1, y) and (x-1, y) not in visited:
+    if not wall(x-1, y) and (x-1, y) not in visited:
         q.put((x-1, y, steps + 1))
     if not wall(x+1, y) and (x+1, y) not in visited:
         q.put((x+1, y, steps + 1))
-    if y - 1 >= 0 and not wall(x, y-1) and (x, y-1) not in visited:
+    if not wall(x, y-1) and (x, y-1) not in visited:
         q.put((x, y-1, steps + 1))
     if not wall(x, y+1) and (x, y+1) not in visited:
         q.put((x, y+1, steps + 1))
