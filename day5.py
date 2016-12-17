@@ -13,10 +13,8 @@ while ',' in password:
         hashed = md5(temp.encode('utf-8')).hexdigest()
         if hashed[5] in '01234567':
             spot = int(hashed[5])
-            print(spot)
             if password[spot] == ',':
                 password[spot] = hashed[6]
-                print(password)
     total += 1
 
 
