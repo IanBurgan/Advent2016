@@ -20,6 +20,8 @@ total = 0
 
 first = True
 count = 0
+
+# max value in my file
 while count < 4272688785:
     for i in ranges:
         if count <= i[1] and count >= i[0]:
