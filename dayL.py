@@ -80,6 +80,7 @@ def solve(word, contents):
 
 print('Part 1:', solve(word, contents))
 
+# not the best way to unsolve, but this was faster to type
 for i in itertools.permutations(word):
     if solve(list(i), contents) == 'fbgdceah':
         print('Part 2:', ''.join(i))
