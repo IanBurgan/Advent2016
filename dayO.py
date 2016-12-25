@@ -56,6 +56,8 @@ for path in permutations(range(7)):
     for i in range(len(path) - 1):
         dist += dists[path[i]][path[i + 1]]
     lengths1.append(dist)
+
+    # part 2 requires traveling back to the start
     dist += dist0[path[-1]]
     lengths2.append(dist)
 
