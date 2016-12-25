@@ -8,6 +8,7 @@ contents = contents.strip()
 contents = contents.split(", ")
 
 locations = set()
+# boolean for part 2 so only first repeat is recorded
 found = False
 
 up = 0
